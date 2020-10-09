@@ -6,3 +6,7 @@
 https://cruelpineapple.github.io/
 
 预计会在初次学习Vue之后的复习阶段更新笔记
+
+##### 2020-10-9：
+
+使用main分支搭建完全手写的页面，目前弄了个index.html并成功部署
