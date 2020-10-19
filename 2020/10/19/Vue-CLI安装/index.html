@@ -1,0 +1,41 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Vue CLI安装 | Ssandra Lee's Page</title><script src="https://cdn.bootcss.com/valine/1.4.4/Valine.min.js"></script><link rel="stylesheet" href="/css/arknights.css"><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.1.2/styles/atom-one-dark-reasonable.min.css"><style>@font-face {
+ font-family: BenderLight;
+ src: local('Bender'), url("/font/BenderLight.ttf");
+}
+@font-face {
+ font-family: 'JetBrains Mono';
+ src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}</style><meta name="generator" content="Hexo 5.2.0"></head><body><header><nav><a href="/">Home</a><a href="/about/">About</a><a href="/archives/">Archives</a></nav></header><main><article><div id="post-bg"><div id="post-title"><div id="post-info"><span>date:<time datetime="2020-10-19T11:08:32.675Z" id="date"> 2020-10-19</time></span><br><span>updated:<time datetime="2020-10-19T12:18:15.720Z" id="updated"> 2020-10-19</time></span></div><h1>Vue CLI安装</h1><hr></div><div id="post-content"><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>很好！Vue文档已经爬着看到了.Vue单文件组件那儿了所以今天没法进行代码commit(其实也是因为要写计组作业呜呜呜原神玩太久了)</p>
+<p>于是就打算写一篇blog关于安装Vue CLI，主要是遇到了两个小问题。</p>
+<h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><h3 id="安装node和npm"><a href="#安装node和npm" class="headerlink" title="安装node和npm"></a>安装node和npm</h3><p>node我之前不知道为了干嘛就装好了已经，安装了node也就有了npm，可以</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plain">npm -v<br>6.4.16<br></code></pre></td></tr></table></figure>
+
+<p>瞧一瞧npm的版本是多少</p>
+<h3 id="一些npm命令"><a href="#一些npm命令" class="headerlink" title="一些npm命令"></a>一些npm命令</h3><p>建议去<a target="_blank" rel="noopener" href="https://docs.npmjs.com/packages-and-modules/getting-packages-from-the-registry">官网</a>看看教程</p>
+<p><strong>分享一个我遇到的小问题</strong></p>
+<p>我使用的终端是cmder，运行ls node_modules时会出现问题</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plain">λ ls node_modules<br>&#39;ls&#39; 不是内部或外部命令，也不是可运行的程序<br>或批处理文件。<br></code></pre></td></tr></table></figure>
+
+<p>上网一查都是解决在Windows环境使用ls命令的解决方案，喊我去Windows目录下添加ls.bat</p>
+<p><strong>根本不需要</strong></p>
+<p>只需要在前面加上npm就好了…</p>
+<p>如果需要查看全局安装的package加入-g参数即可</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plain">λ npm ls -g node_modules<br>C:\Users\20150\AppData\Roaming\npm<br>&#96;-- (empty)<br></code></pre></td></tr></table></figure>
+
+<p>显示的目录就是全局安装的目录</p>
+<h3 id="安装Vue-CLI"><a href="#安装Vue-CLI" class="headerlink" title="安装Vue CLI"></a>安装Vue CLI</h3><p>和<a target="_blank" rel="noopener" href="https://cli.vuejs.org/zh/guide/installation.html">官网</a>讲的一样</p>
+<p>输入如下命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">λ npm install -g @vue&#x2F;cli<br></code></pre></td></tr></table></figure>
+
+<p><strong>然后分享另一个小问题</strong></p>
+<p>如果在含有Vue.js的目录下查看Vue版本会发生错误(并非在命令行报错而是一个弹窗错误)，因为我碰巧在练习Vue的文件夹打开了cmder。解决方案也很简单，前往没有Vue.js的目录即可</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plain">D:\<br>λ vue --version<br>@vue&#x2F;cli 4.5.8<br></code></pre></td></tr></table></figure>
+
+
+
+<div id="paginator"></div></div><div id="post-footer"><hr><a href="/2020/10/19/%E5%BF%AB%E9%80%9F%E5%88%87%E6%8D%A2%E4%B8%AD%E8%8B%B1%E6%96%87%E6%A0%87%E7%82%B9/">← Prev 快速切换中英文标点</a><span style="color: #fe2"> | </span><a href="/2020/10/17/Java%E4%BD%9C%E4%B8%9A2-8/">Java作业2-8，shape2 Next →</a><hr></div><div id="bottom-btn"><a id="to-index" href="#post-index" title="index">≡</a><a id="to-top" href="#post-title" title="to top">∧</a></div><details id="reward"><summary>打赏</summary><div id="alipay"><span>支付宝 | Alipay</span><br><img src="/img/Alipay.png"></div><div id="wechat"><span>微信 | WeChat</span><br><img src="/img/WeChat.png"></div></details><div id="Valine"></div><script>new Valine({
+ el: '#Valine'
+ , appId: 'WPGFyW0DFUta4CV3jXQy2ibS-gzGzoHsz'
+ , appKey: 'dVbL3vuRvB2BnEdnLYT5dBDd'
+ , placeholder: '此条评论委托企鹅物流发送'
+})</script></div></article><aside><div id="about"><a href="/" id="logo"><img src="https://avatars2.githubusercontent.com/u/56106017?s=460&amp;u=d58a87ce9b7c93adb69c3d91b21ca05a858b3a62&amp;v=4" alt="Logo"></a><h1 id="Dr"><a target="_blank" rel="noopener" href="https://github.com/CruelPineapple"> Dr.Ssandra Lee</a></h1><section id="total"><a id="total-archives" href="/archives"><span class="total-title">Archives Total:</span><span class="total-number">22</span></a><div id="total-tags"><span class="total-title">Tags:</span><span class="total-number">4</span></div><div id="total-categories"><span class="total-title">Categories:</span><span class="total-number">3</span></div></section></div><div id="aside-block"><h1>INDEX</h1><div id="post-index"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%87%E7%A8%8B"><span class="toc-number"></span> <span class="toc-text">过程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85node%E5%92%8Cnpm"><span class="toc-number">1.</span> <span class="toc-text">安装node和npm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E4%BA%9Bnpm%E5%91%BD%E4%BB%A4"><span class="toc-number">2.</span> <span class="toc-text">一些npm命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Vue-CLI"><span class="toc-number">3.</span> <span class="toc-text">安装Vue CLI</span></a></li></ol></div></div><footer><nobr><span class="text-title">©</span><span class="text-content">1970 to 2020</span></nobr><wbr><nobr><span class="text-title">ICP</span><span class="text-content">100044889</span></nobr><wbr><wbr><nobr>published with&nbsp;<a target="_blank" rel="noopener" href="http://hexo.io">Hexo&nbsp;</a></nobr><wbr><nobr>Theme&nbsp;<a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknight&nbsp;</a></nobr><wbr><nobr>by&nbsp;<a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas><script src="/js/arknights.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script></body></html>
