@@ -5,11 +5,13 @@
 @font-face {
  font-family: 'JetBrains Mono';
  src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
-}</style><meta name="generator" content="Hexo 5.2.0"></head><body><header><nav><a href="/">Home</a><a href="/about/">About</a><a href="/archives/">Archives</a></nav></header><main><article><div id="post-bg"><div id="post-title"><div id="post-info"><span>date:<time datetime="2020-11-13T14:18:51.651Z" id="date"> 2020-11-13</time></span><br><span>updated:<time datetime="2020-11-13T14:27:01.923Z" id="updated"> 2020-11-13</time></span></div><h1>关于JSX</h1><hr></div><div id="post-content"><h3 id="JSX可以很好地描述UI的交互本质"><a href="#JSX可以很好地描述UI的交互本质" class="headerlink" title="JSX可以很好地描述UI的交互本质"></a>JSX可以很好地描述UI的交互本质</h3><p>看起来它是一个模板语言, 但它具有JavaScript的全部功能。</p>
+}</style><meta name="generator" content="Hexo 5.2.0"></head><body><header><nav><a href="/">Home</a><a href="/about/">About</a><a href="/archives/">Archives</a></nav></header><main><article><div id="post-bg"><div id="post-title"><div id="post-info"><span>date:<time datetime="2020-11-13T14:18:51.651Z" id="date"> 2020-11-13</time></span><br><span>updated:<time datetime="2020-11-14T12:48:12.975Z" id="updated"> 2020-11-14</time></span></div><h1>关于JSX</h1><hr></div><div id="post-content"><h3 id="JSX可以很好地描述UI的交互本质"><a href="#JSX可以很好地描述UI的交互本质" class="headerlink" title="JSX可以很好地描述UI的交互本质"></a>JSX可以很好地描述UI的交互本质</h3><p>看起来它是一个模板语言, 但它具有JavaScript的全部功能。</p>
 <p>通过JSX可以生成React元素！</p>
 <h3 id="使用JSX的原因"><a href="#使用JSX的原因" class="headerlink" title="使用JSX的原因"></a>使用JSX的原因</h3><p>React觉得渲染逻辑本质上与其他UI逻辑内在耦合(而我需要慢慢体会一下为什么React这样觉得)。总之就是UI的变化和数据在UI中的展示都是与它们对应的逻辑很有关系的。</p>
 <p>想想写原生js是怎么做的，先形成页面，再在js中操作DOM，这就是所谓的人为分离了标记和逻辑的方式。</p>
-<p><strong>因此</strong>，React选择把标记和逻辑都放在一个耦合单元中，他们叫它组件。这实现了关注点分离(我还不是特别理解这个东西)</p>
+<p><strong>因此</strong>，React选择把标记和逻辑都放在一个耦合单元中，他们叫它组件。这实现了关注点分离</p>
+<p>======</p>
+<p>经过我绝赞的理解，关注点分离这个词实在有些抽象，通过例子来说明就容易理解很多。比如模块化，封装等，都是实现关注点分离的手段，这么看就比较清晰了，所谓关注点分离，就是</p>
 <div id="paginator"></div></div><div id="post-footer"><hr><a href="/2020/11/11/%E5%85%B3%E4%BA%8EVue%E5%AE%9E%E4%BE%8B/">关于Vue实例 Next →</a><hr></div><div id="bottom-btn"><a id="to-index" href="#post-index" title="index">≡</a><a id="to-top" href="#post-title" title="to top">∧</a></div><details id="reward"><summary>打赏</summary><div id="alipay"><span>支付宝 | Alipay</span><br><img src="/img/Alipay.png"></div><div id="wechat"><span>微信 | WeChat</span><br><img src="/img/WeChat.png"></div></details><div id="Valine"></div><script>new Valine({
  el: '#Valine'
  , appId: 'WPGFyW0DFUta4CV3jXQy2ibS-gzGzoHsz'
