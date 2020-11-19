@@ -5,7 +5,7 @@
 @font-face {
  font-family: 'JetBrains Mono';
  src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
-}</style><meta name="generator" content="Hexo 5.2.0"></head><body><header><nav><a href="/">Home</a><a href="/about/">About</a><a href="/archives/">Archives</a></nav></header><main><article><div id="post-bg"><div id="post-title"><div id="post-info"><span>date:<time datetime="2020-11-18T11:12:20.248Z" id="date"> 2020-11-18</time></span><br><span>updated:<time datetime="2020-11-19T07:59:49.235Z" id="updated"> 2020-11-19</time></span></div><h1>Vue router</h1><hr></div><div id="post-content"><h3 id="很残酷，但这就是现实"><a href="#很残酷，但这就是现实" class="headerlink" title="很残酷，但这就是现实"></a>很残酷，但这就是现实</h3><p><strong>这是一篇赶鸭子上架的学习心得：</strong>我没有时间去仔细看Vue router的文档了，但是貌似这个插件有很多以后会需要知道的服务器方面的内容在里面，早点接触也不见得是一件坏事。</p>
+}</style><meta name="generator" content="Hexo 5.2.0"></head><body><header><nav><a href="/">Home</a><a href="/about/">About</a><a href="/archives/">Archives</a></nav></header><main><article><div id="post-bg"><div id="post-title"><div id="post-info"><span>date:<time datetime="2020-11-18T11:12:20.248Z" id="date"> 2020-11-18</time></span><br><span>updated:<time datetime="2020-11-19T15:01:51.480Z" id="updated"> 2020-11-19</time></span></div><h1>Vue router</h1><hr></div><div id="post-content"><h3 id="很残酷，但这就是现实"><a href="#很残酷，但这就是现实" class="headerlink" title="很残酷，但这就是现实"></a>很残酷，但这就是现实</h3><p><strong>这是一篇赶鸭子上架的学习心得：</strong>我没有时间去仔细看Vue router的文档了，但是貌似这个插件有很多以后会需要知道的服务器方面的内容在里面，早点接触也不见得是一件坏事。</p>
 <h3 id="那么我用Vue-router来干嘛了呢"><a href="#那么我用Vue-router来干嘛了呢" class="headerlink" title="那么我用Vue router来干嘛了呢"></a>那么我用Vue router来干嘛了呢</h3><p><strong>切 换 组 件</strong>  哈哈哈哈哈哈</p>
 <p>这波叫大炮杀蚊子，其实这个功能用动态组件也能做的，但是！我决定开始上手这个工具！因为它好像还是挺方便的！</p>
 <h3 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h3><p>根据CLI创建的项目模板以及我的绝赞摸索(毕竟CLI甚至单文件组件都是第一次用)，router-link标签所包含的内容就是指向一个新路由的链接。</p>
@@ -27,6 +27,7 @@
 <p>name根据目前的经验是一个可以随便起的名字，但是不建议使用无意义的符号，因为这样会增加维护难度。</p>
 <p>component中import了这个路由使用的页面，并把它作为component的值</p>
 <p><strong>关于为什么要在component中import而不是文件的开头</strong>，我的理解是，这样设置在最初加载页面的时候不需要加载其他还未使用到的页面，属于开屏优化的一部分。在点击对应的router-link标签切换路由地址的时候才会加载对应的组件。</p>
+<p>补充：</p>
 <div id="paginator"></div></div><div id="post-footer"><hr><a href="/2020/11/13/React-JSX/">关于JSX Next →</a><hr></div><div id="bottom-btn"><a id="to-index" href="#post-index" title="index">≡</a><a id="to-top" href="#post-title" title="to top">∧</a></div><details id="reward"><summary>打赏</summary><div id="alipay"><span>支付宝 | Alipay</span><br><img src="/img/Alipay.png"></div><div id="wechat"><span>微信 | WeChat</span><br><img src="/img/WeChat.png"></div></details><div id="Valine"></div><script>new Valine({
  el: '#Valine'
  , appId: 'WPGFyW0DFUta4CV3jXQy2ibS-gzGzoHsz'
