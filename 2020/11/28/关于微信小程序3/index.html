@@ -9,7 +9,7 @@
 <p>目前微信小程序中，前端使用用户头像和昵称是十分方便的，通过opendata标签可以直接调用头像和昵称，但是回传头像和昵称到后端就没有这么方便了。当然wx.login后可以使用getUserInfo方法得到头像和昵称信息，不过对于这个轻量而不刚需微信登录的小程序而言，进行wx.login显然是比较笨重的写法。</p>
 <p>因此，采用在按钮上绑定用户授权事件的方法获得头像。最初绑定在登录按钮，造成获取头像失败，原因在于触发登录事件的时候，其异步请求已经触发，然而此时实际情况是用户正在进行弹窗授权阶段，还未获得头像url和昵称，因此传给后台的头像url为空。</p>
 <p>可以想到的解决方案比如单独设计一个授权按钮，似乎最后是通过云函数解决的，豆豆实在是太厉害辣！</p>
-<div id="paginator"></div></div><div id="post-footer"><hr><a href="/2020/11/29/%E5%85%B3%E4%BA%8E%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F4/">← Prev </a><span style="color: #fe2"> | </span><a href="/2020/11/25/%E5%85%B3%E4%BA%8E%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F2/">关于微信小程序(列表渲染及登录) Next →</a><hr></div><div id="bottom-btn"><a id="to-top" href="#post-title" title="to top">∧</a></div><details id="reward"><summary>打赏</summary><div id="alipay"><span>支付宝 | Alipay</span><br><img src="/img/Alipay.png"></div><div id="wechat"><span>微信 | WeChat</span><br><img src="/img/WeChat.png"></div></details><div id="Valine"></div><script>new Valine({
+<div id="paginator"></div></div><div id="post-footer"><hr><a href="/2020/11/29/%E5%85%B3%E4%BA%8E%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F4/">← Prev 关于微信小程序(联调，异步请求)</a><span style="color: #fe2"> | </span><a href="/2020/11/25/%E5%85%B3%E4%BA%8E%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F2/">关于微信小程序(列表渲染及登录) Next →</a><hr></div><div id="bottom-btn"><a id="to-top" href="#post-title" title="to top">∧</a></div><details id="reward"><summary>打赏</summary><div id="alipay"><span>支付宝 | Alipay</span><br><img src="/img/Alipay.png"></div><div id="wechat"><span>微信 | WeChat</span><br><img src="/img/WeChat.png"></div></details><div id="Valine"></div><script>new Valine({
  el: '#Valine'
  , appId: 'WPGFyW0DFUta4CV3jXQy2ibS-gzGzoHsz'
  , appKey: 'dVbL3vuRvB2BnEdnLYT5dBDd'
